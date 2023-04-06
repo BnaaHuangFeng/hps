@@ -1,0 +1,26 @@
+{   
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/build"
+    },
+    "tasks": [
+        {
+            "label": "compile",
+            "command":"gfortran",
+            "args": [
+                "-g",
+                "-c",
+                "${workspaceRoot}/*/*.f",
+                "-o",
+                "${workspaceRoot}/build/*.obj"
+            ]
+        },
+        {
+            "label": "Build",
+            "dependsOn":[
+                "compile",
+            ]
+        }
+    ],
+ 
+}

@@ -1,0 +1,20 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+        
+        {
+            "name": "Fortran Launch (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "x86",
+            "program": "${workspaceRoot}/bin/hyplas.exe",
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/Program Files/mingw64/bin/gdb.exe",//结合自己的路径!
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "externalConsole": true,
+            "preLaunchTask": "build"
+        }
+    ] 
+}
