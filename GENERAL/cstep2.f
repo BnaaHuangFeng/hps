@@ -57,7 +57,7 @@ C ordering (11,21,12,22,33), compatible with the discrete gradient G.
           DMATX2(INEW,JNEW)=DMATX(IOLD,JOLD)
    30   CONTINUE
    40 CONTINUE
-C Compute remaining needed matrix [DELTA_ik BETRL_jl+DELTA_jl BETRL_il]
+C Compute remaining needed matrix [DELTA_ik BETRL_jl+DELTA_jk BETRL_il]
       CALL RVZERO(BMTX,MADIM*MADIM)
       BMTX(1,1)=R2*BETRL(1)
       BMTX(1,3)=R2*BETRL(3)

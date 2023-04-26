@@ -1,0 +1,8 @@
+/** Array with the equilibrium convergence  
+ *  tolerance for each specified load       
+ *  increment (for fixed load increments option).*/
+DEFAULT TOLERV = 0.10000E-06;
+/** Array with the maximum allowed number of
+ *  global (equilibrium) iterations for each
+ *  specified load increment (for fixed load increments option).*/         
+DEFAULT MITERV = 15;
